@@ -1,0 +1,176 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('./assets/fundal.png');
+  background-size: auto; 
+  background-repeat: repeat; 
+  font-family: Arial, Helvetica, sans-serif; 
+  color: black; 
+}
+
+
+.navbar {
+  width: 230px;
+  height: 100vh;
+  background-color: #da702a;
+  background-image: url('./assets/bar2.png');
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; 
+  align-items: center;
+  font-family: "Roboto";
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding-top: 10px;
+  gap: 10px; 
+}
+
+.navbar-small{
+  width: 230px;
+  height: 50px;
+  
+}
+
+.profile {
+  width: 180px;
+  height: 180px;
+  background-color: wheat;
+  margin-bottom: 10px; /* Adjust margin to control space below profile */
+  background-image: url('./assets/pisici.png') ;
+  background-size: cover; /* Resize the background image to cover the entire container */
+  background-repeat: no-repeat;
+  
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+  padding: 5px; /* Reduce padding to make items closer */
+  text-align: center;
+  transition: background-color 0.3s;
+  margin-bottom: 10px; /* Add space between links */
+}
+
+.navbar a:last-child {
+  margin-bottom: 0; /* Remove bottom margin for the last item */
+}
+
+.navbar a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+
+/* Main App Container */
+.App {
+  width: calc(100vw - 200px);
+  height: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-left: 180px;
+  padding-top: 40px;
+}
+
+/* Post Styling */
+.post {
+  width: 800px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  background-color: #FFBF78;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  
+}
+
+.post:hover {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.post .title h1 {
+  margin: 0; /* Remove margin from h1 if present */
+  color: white; /* Set text color to white */
+}
+
+.post .body {
+  flex: 10%;
+  background-color: #FEFFD2;
+  display: flex; /* Changed from grid to flex */
+  justify-content: space-between; /* Space out title and username */
+  align-items: center; /* Center items vertically */
+  padding: 0 15px; /* Add padding on sides */
+  overflow: hidden;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  align-items: inherit;
+}
+
+.post .title .username {
+  margin: 0; /* Remove margin from username if present */
+  color: #000000; /* Set text color to black */
+  font-size: large;
+  size: 20px;
+}
+
+/* Additional Styles for Specific Components */
+.upSide {
+  background-color: aliceblue;
+  width: 800px;
+  height: 500px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+#commentInput {
+  width: 800px;
+  height: 50px;
+}
+
+.downSide .Comments {
+  flex: 80%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Comments .comment {
+  width: 70%;
+  padding: 30px;
+  border: 1px solid lightgray;
+  background-color: aliceblue;
+  color: black;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.logoutButton {
+  color: white;
+}
+
+.greeting {
+  color: black;
+  text-align: center;
+  display: block;
+  padding: 10px;
+  margin: 10px auto;
+  width: fit-content;
+  height: 300px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.greetContainer {
+  background-color: #FEFFD2;
+  background-image: url("./assets/greetKitty.png");
+  background-size: cover;
+  background-repeat: repeat;
+  border-radius: 5px;
+  padding: 20px;
+  width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
