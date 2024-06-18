@@ -35,7 +35,7 @@ function Login() {
 
     return (
         <div>
-            <h1>Login</h1>
+           
             <Formik
                 initialValues={{
                     username: '',
@@ -45,6 +45,7 @@ function Login() {
                 validationSchema={validationSchema}
             >
                 <Form className="formContainerLogin">
+                <h1>Login</h1>
                     <label>Username: </label>
                     <ErrorMessage name="username" component="span"/>
                     <Field
@@ -60,8 +61,9 @@ function Login() {
                         id="inputCreatePassword"
                         name="password"
                         placeholder="Your Password..."
+                    
                     />
-
+                    <h3 className="forgotPassword">Ai uitat parola?</h3>
                     <button type="submit"> Login</button>
                 </Form>
             </Formik>

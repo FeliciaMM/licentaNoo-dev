@@ -36,7 +36,7 @@ body {
 
 .profile {
   width: 180px;
-  height: 180px;
+  height: 200px;
   background-color: wheat;
   margin-bottom: 10px; /* Adjust margin to control space below profile */
   background-image: url('./assets/pisici.png') ;
@@ -113,6 +113,10 @@ body {
   color: #000000; /* Set text color to black */
   font-size: large;
   size: 20px;
+}
+
+.usernameDisplay{
+  font-size: x-large;
 }
 
 /* Additional Styles for Specific Components */
