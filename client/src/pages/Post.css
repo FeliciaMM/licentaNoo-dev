@@ -1,0 +1,40 @@
+.post {
+    width: 500px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    background-color: #FFBF78;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    color: #000000;
+  }
+  
+  .post:hover {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+  
+  .post .title h1 {
+    margin: 0; /* Remove margin from h1 if present */
+    color: white; /* Set text color to white */
+  }
+  
+  .post .body {
+    flex: 10%;
+    background-color: #FEFFD2;
+    display: flex; /* Changed from grid to flex */
+    justify-content: space-between; /* Space out title and username */
+    align-items: center; /* Center items vertically */
+    padding: 0 15px; /* Add padding on sides */
+    overflow: hidden;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    align-items: inherit;
+  }
+  
+  .post .title .username {
+    margin: 0; /* Remove margin from username if present */
+    color: #000000; /* Set text color to black */
+    font-size: large;
+    size: 20px;
+  }
+  

@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axiosHttp from "../interceptors/api-interceptor.js";
-import './CSS/Profile.css'; // Make sure to create this CSS file
-
+import './Profile.css'; // Make sure to create this CSS file
 
 export default function Profile() {
     let navigate = useNavigate();
@@ -10,7 +9,6 @@ export default function Profile() {
     const [listOfPosts, setListOfPosts] = useState([]);
     const [profileImage, setProfileImage] = useState(null);
     const [selectedImage, setSelectedImage] = useState(null);
-
 
     useEffect(() => {
         const userDetails = JSON.parse(sessionStorage.getItem("userDetails"));
@@ -66,23 +64,32 @@ export default function Profile() {
     return (
         <div className='profilePageContainer'>
             <div className='basicInfo'>
-                <h1>Username: {username}</h1>
-                <div className='profilePictureChange'>
-                    <div className='profilePictureContainer' onClick={triggerFileInput}>
-                        {profileImage && (
-                            <img src={profileImage} alt="Profile" className='profilePicture' />
-                        )}
-                        <div className='overlay'>
-                            <span className='changeText'>Change Picture</span>
-                        </div>
+                <div className='profilePictureFake'></div>
+                <div>
+                    
+                    <div className='infoContainer'>
+                    <h1 className='user'>M.Felicia</h1>
+                    <h3>Lily & Oliver ❤️</h3>
+                    <h3>“Such short little lives our pets have to spend with us, and they spend most of it waiting for us to come home each day”.- John Grogan</h3>
+
                     </div>
-                    <input type="file" accept="image/*" id="fileInput" onChange={handleImageChange} style={{ display: 'none' }} />
-                    {selectedImage && (
-                        <button onClick={handleSubmit}>
-                            Confirm Change
-                        </button>
-                    )}
                 </div>
+            </div>
+            <div className='profilePictureChange'>
+                {/* <div className='profilePictureContainer' onClick={triggerFileInput}>
+                    {profileImage && (
+                        <img src={profileImage} alt="Profile" className='profilePicture' />
+                    )}
+                    <div className='overlay'>
+                        <span className='changeText'>Change Picture</span>
+                    </div>
+                </div> */}
+                <input type="file" accept="image/*" id="fileInput" onChange={handleImageChange} style={{ display: 'none' }} />
+                {selectedImage && (
+                    <button onClick={handleSubmit}>
+                        Confirm Change
+                    </button>
+                )}
             </div>
             <div className='listOfPosts'>
                 <ul>

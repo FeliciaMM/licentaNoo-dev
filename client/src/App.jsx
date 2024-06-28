@@ -60,16 +60,21 @@ function App() {
                 {!authState.status ? (
                     <>
                       <Link to="/login">Login</Link>
-                      <Link to="/registration">Registration</Link>
+                      <Link to="/registration">Inregistrare</Link>
                     </>
                 ) : (
                     <>
-                      <Link to="/">Home Page</Link>
-                      <Link to="/createpost">Create a Post</Link>
+                      <Link to="/">Acasa</Link>
+                      <Link to="/createpost">Creaza un post</Link>
+                      <Link to="/createpetsitter">Creaza o oferta</Link> 
                       <Link to="/petsitteroffers">PetSitters</Link>
+                      <Link to="/petsitteroffers">Clienti</Link>
+                        {/*                       
                       <Link to="">PetWalkers</Link>
                       <Link to="">Veterinari</Link>
-                      <Link to="">Conversatii</Link>
+                       */}
+
+                      
                       <Link className="logoutButton" onClick={logout} to="/login">Logout</Link>
                       <div className='navbar-small'>
                         

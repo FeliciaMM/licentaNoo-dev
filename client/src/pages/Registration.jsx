@@ -1,4 +1,4 @@
-import "../pages/CSS/Registration.css"
+import "../pages/Registration.css"
 import React from 'react'
 import {ErrorMessage, Field, Form, Formik} from 'formik'
 import * as Yup from 'yup'
@@ -73,7 +73,7 @@ function Registration() {
           </Field>
 
             
-          <button type="submit"> Register</button>
+          <button type="submit" className="RegisterButton"> Register</button>
         </Form>
       </Formik>
     </div>

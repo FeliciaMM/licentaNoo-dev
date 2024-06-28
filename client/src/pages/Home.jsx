@@ -2,6 +2,7 @@ import React, { useContext, useEffect, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../helpers/AuthContext';
 import axiosHttp from "../interceptors/api-interceptor.js";
+import "../pages/Home.css"
 
 function Home() {
   const { authState } = useContext(AuthContext); 

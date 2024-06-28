@@ -1,0 +1,55 @@
+.createPetSitterContainer{
+    width: 100%;
+    max-width: 800px; /* Adjust maximum width as needed */
+    margin: 20px auto;
+    padding: 30px; /* Increased padding for better spacing */
+    background-color: #FEFFD2; /* Lighter background color for better contrast */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Added shadow for depth */
+    border-radius: 8px; /* Slightly more rounded corners */
+    align-content: center;
+    background-image: url('../assets/postCont.png');
+    background-size:cover; 
+    background-repeat: no-repeat;
+    color: white;
+    
+}
+button.SubmitPet{
+    color: black;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button.SubmitPet:hover {
+    background-color: #da702a;
+}
+textarea#PetText {
+    width: 755px;
+    height: 200px; /* Adjust this height as needed */
+    resize: vertical; /* Allow vertical resizing */
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+text#Pettitle{
+    width: 200px;
+ 
+}
+
+#Pettitle, #PetText {
+    background-color: white;
+    color: black; /* Ensures the text color is visible on a white background */
+    border: 1px solid #ccc; /* Optional: Adds a border to the fields */
+    padding: 10px; /* Optional: Adds some padding for better readability */
+    font-size: 16px; /* Optional: Adjusts the font size */
+    font-family:Arial, Helvetica, sans-serif
+}
+
+.createPetSitterContainer label {
+    color: white;
+}
+

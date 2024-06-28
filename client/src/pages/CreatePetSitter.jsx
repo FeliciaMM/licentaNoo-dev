@@ -4,6 +4,7 @@ import * as Yup from 'yup';
 import { useNavigate } from 'react-router-dom';
 import { AuthContext } from '../helpers/AuthContext';
 import axiosHttp from "../interceptors/api-interceptor.js";
+import "../pages/CreatePetSitter.css"
 
 function CreatePetSitter() {
     const navigate = useNavigate();
@@ -30,19 +31,19 @@ function CreatePetSitter() {
     };
 
     return (
-        <div className='createPostContainer'>
-            <div><h1>Create a PetSitter Offer</h1></div>
+        <div className='createPetSitterContainer'>
+            <div><h1>Creaza o oferta de PetSitting</h1></div>
             <Formik initialValues={initialValues} onSubmit={onSubmit} validationSchema={validationSchema}>
                 <Form>
-                    <label htmlFor="title">Title:</label>
+                    <label htmlFor="title" >Title:</label>
                     <ErrorMessage name="title" component="span" />
-                    <Field type="text" id="title" name="title" placeholder="Write a title" />
+                    <Field type="text" id="Pettitle" name="Pettitle" placeholder="Scrie un titlu" />
 
-                    <label htmlFor="text">Description:</label>
+                    <label htmlFor="text" >Description:</label>
                     <ErrorMessage name="text" component="span" />
-                    <Field as="textarea" id="text" name="text" placeholder="Write a Description" />
+                    <Field as="textarea" id="PetText" name="PetText" placeholder="Scrie o scurtă descriere despre tine" />
 
-                    <button type="submit">Submit Post</button>
+                    <button type="submit" className='SubmitPet'>Submit Post</button>
                 </Form>
             </Formik>
         </div>

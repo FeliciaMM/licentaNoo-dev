@@ -1,4 +1,4 @@
-import "../pages/CSS/CreatePost.css"
+import "../pages/CreatePost.css"
 import React, { useContext, useEffect } from 'react'
 import { ErrorMessage, Field, Form, Formik } from 'formik'
 import * as Yup from 'yup'
@@ -39,7 +39,7 @@ function CreatePost() {
     };
 
     return (
-        <div className='createPostContainer'>
+        <div className='createPetSitterContainer'>
             <Formik 
                 initialValues={initialValues} 
                 onSubmit={onSubmit} 
@@ -50,7 +50,7 @@ function CreatePost() {
                         <label id='labelTitle'>Title: </label>
                         <ErrorMessage name="title" component="span" className="error-message" />
                         <Field 
-                            id="inputTitle" 
+                            id="petSitterTitle" 
                             name="title" 
                             placeholder="Write a title"
                         />
@@ -59,7 +59,7 @@ function CreatePost() {
                         <ErrorMessage name="text" component="span" className="error-message" />
                         <Field 
                             as="textarea"
-                            id="inputText" 
+                            id="petSitterText" 
                             name="text" 
                             placeholder="Write a post"
                         />

@@ -1,0 +1,53 @@
+.createPostContainer {
+  
+  width: 100%;
+  max-width: 800px; /* Adjust maximum width as needed */
+  margin: 20px auto;
+  padding: 30px; /* Increased padding for better spacing */
+  background-color: #ffffff; /* Lighter background color for better contrast */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Added shadow for depth */
+  border-radius: 8px; /* Slightly more rounded corners */
+}
+
+#createPostForm {
+  display: flex;
+  flex-direction: column;
+}
+
+#createPostForm label {
+  margin-bottom: 5px; /* Reduced margin for a tighter look */
+  font-weight: bold; /* Bold labels for better readability */
+  color: #333; /* Darker color for labels */
+}
+
+#createPostForm .error-message {
+  color: red;
+  font-size: 14px; /* Smaller font for error messages */
+  margin-top: -5px; /* Negative margin to align closer to the input */
+  margin-bottom: 10px; /* Space below the error message */
+}
+
+
+
+#createPostForm input:focus, #createPostForm textarea:focus {
+  border-color: #007BFF; /* Blue border on focus */
+}
+
+#petSitterText{
+  width: 400px;
+}
+
+#createPostForm button {
+  padding: 10px 20px;
+  background-color: #007BFF; /* Blue background for the button */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#createPostForm button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+

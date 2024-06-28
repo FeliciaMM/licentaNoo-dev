@@ -2,6 +2,7 @@ import React, {useContext, useEffect, useState} from 'react'
 import { useParams} from 'react-router-dom'
 import {AuthContext} from '../helpers/AuthContext';
 import axiosHttp from "../interceptors/api-interceptor.js";
+import './Post.css';
 
 function Post() {
     const { id } = useParams();

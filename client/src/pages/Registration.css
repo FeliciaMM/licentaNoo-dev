@@ -1,3 +1,9 @@
+body {
+    color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 .formContainer {
     max-width: 300px;
     margin: 0 auto;
@@ -5,13 +11,14 @@
     background-color: #f9f9f9;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
+    background-image: url('../assets/postCont.png');
 }
 
 label {
     display: block;
     margin-bottom: 10px;
     font-weight: 600;
-    color: #333;
+    color: white; /* Changed color to white */
 }
 
 input,
@@ -22,7 +29,9 @@ button {
     margin-bottom: 20px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    box-sizing: border-box; /* Added to fix padding and border issue */
+    box-sizing: border-box; /* Fixes padding and border issue */
+    background-color: white; /* Background color to contrast with white text */
+    color: black; /* Text color set to white */
 }
 
 input:focus,
@@ -32,16 +41,17 @@ button:focus {
     border-color: #007bff;
 }
 
-button {
-    color: white;
-    background-color: #007bff;
+.RegisterButton {
+    color: black;
+    background-color: white;
     border: none;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
-button:hover {
-    background-color: #ffffff;
+.RegisterButton:hover {
+    background-color: #da702a; /* Added hover effect for the button */
+    color: white; /* Text color on hover */
 }
 
 .error {
@@ -49,4 +59,3 @@ button:hover {
     margin-top: 5px;
     font-size: 14px;
 }
-

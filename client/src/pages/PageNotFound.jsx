@@ -1,4 +1,4 @@
-import "../pages/CSS/PageNotFound.css"
+import "../pages/PageNotFound.css"
 import React from "react";
 import {Link} from "react-router-dom";
 
